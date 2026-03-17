@@ -3,24 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Portfolio of Isuru Anupama - Full Stack Developer and UI/UX Designer at IJSE.">
-    <meta name="keywords" content="Software Engineering, IJSE, GDSE 76, Java, Portfolio, Isuru Anupama">
-    <meta name="author" content="Isuru Anupama">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anu Dev | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!--home -->
     <header class="navbar">
         <div class="logo">
             <span class="green-text">&lt;</span><span class="dot">·</span>ANu<br>
             <span class="indent">Dev/&gt;</span>
         </div>
 
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+
         <nav>
             <ul class="nav-links">
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#services">Services</a></li>
@@ -38,13 +45,32 @@
             <h1 class="greeting">Hi, I'm</h1>
             <h2 class="name">Isuru Anupama</h2>
             <h3 class="role">UI/UX Designer</h3>
+            <!-- <h3 class="role">
+                <span id="typewriter-text"></span><span class="cursor">|</span>
+            </h3> -->
 
-            <div class="social-icons">
-                <a href="https://discordapp.com/users/anux_77"><img src="Assets/dis 100.png" alt="Discord" class="custom-icon"></a>
+            <!-- <div class="social-icons">
+                <a href="https://discordapp.com/users/anux_77"><img src="Assets/dis 100.png" alt="Discord"
+                        class="custom-icon"></a>
                 <a href="https://wa.me/94779647493"><img src="Assets/wp 100.png" alt="WhatsApp" class="custom-icon"></a>
                 <a href="https://t.me/AnU_V7T"><img src="Assets/tele 100.png" alt="Telegram" class="custom-icon"></a>
-                <a href="https://github.com/ANu-771"><img src="Assets/icons8-github-100.png" alt="GitHub" class="custom-icon"></a>
-                <a href="https://www.instagram.com/no_instagram_username"><img src="Assets/insta 100.png" alt="Instagram" class="custom-icon"></a>
+                <a href="https://github.com/ANu-771"><img src="Assets/icons8-github-100.png" alt="GitHub"
+                        class="custom-icon"></a>
+                <a href="https://www.instagram.com"><img src="Assets/insta 100.png" alt="Instagram"
+                        class="custom-icon"></a>
+            </div> -->
+
+            <div class="social-icons">
+                <a href="https://discordapp.com/users/anux_77" target="_blank"><img src="Assets/dis 100.png"
+                        alt="Discord" class="custom-icon"></a>
+                <a href="https://wa.me/94779647493" target="_blank"><img src="Assets/wp 100.png" alt="WhatsApp"
+                        class="custom-icon"></a>
+                <a href="https://t.me/AnU_V7T" target="_blank"><img src="Assets/tele 100.png" alt="Telegram"
+                        class="custom-icon"></a>
+                <a href="https://github.com/ANu-771" target="_blank"><img src="Assets/icons8-github-100.png"
+                        alt="GitHub" class="custom-icon"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="Assets/insta 100.png" alt="Instagram"
+                        class="custom-icon"></a>
             </div>
 
             <p class="bio">
@@ -55,16 +81,59 @@
             <div class="hero-buttons">
                 <a href="#projects" class="btn-primary">VIEW MY WORK &rarr;</a>
                 <a href="#contact" class="btn-secondary">Let's Talk</a>
+
+                <!-- <a href="#" id="voiceBtn" class="btn-listen">
+                    <span>Listen</span>
+                    <div class="equalizer">
+                        <span class="bar bar-1"></span>
+                        <span class="bar bar-2"></span>
+                        <span class="bar bar-3"></span>
+                        <span class="bar bar-4"></span>
+                    </div>
+                </a>
+
+                <audio id="voiceAudio">
+                    <source src="Assets/full_voice_of_myportfolio.mp3" type="audio/mpeg">
+                </audio> -->
+
+
+
+
+
+
+
+
+
+
+                <a href="Assets/full_voice_of_myportfolio.mp3" target="_blank" class="btn-listen">
+                    <span>Listen</span>
+                    <div class="equalizer">
+                        <span class="bar bar-1"></span>
+                        <span class="bar bar-2"></span>
+                        <span class="bar bar-3"></span>
+                        <span class="bar bar-4"></span>
+                    </div>
+                </a>
+
+                <a href="Assets/deep_sleep_experience_uninterrupted_rest_ardh_2fw8ny_9387.m4a" target="_blank"
+                    class="music-player-btn" style="display: flex;">
+                    <span class="music-text">Sound of Darkness</span>
+                </a>
             </div>
         </div>
+
 
         <div class="hero-image">
             <div class="glow-circle">
                 <img src="Assets/IMG_2869,JPG-Picsart-AiImageEnhancer.jpeg" alt="Isuru Anupama">
             </div>
         </div>
+
     </section>
 
+    <div class="divider"></div>
+
+    <!-- about me -->
     <section class="about" id="about">
         <div class="about-header">
             <div class="title-wrapper">
@@ -79,9 +148,13 @@
         </div>
 
         <div class="about-content-grid">
+
             <div class="about-image-column">
                 <div class="main-image-wrapper">
                     <img src="Assets/aboutme pic.jpeg" alt="Isuru Anupama Portrait">
+
+                    <!-- <img src="Assets/AboutMe_bgrem.png" alt="Isuru Anupama Portrait"> -->
+
                 </div>
             </div>
 
@@ -101,6 +174,28 @@
                     innovative solutions that stand the test of time.
                 </p>
 
+                <!--  -->
+                <div class="about-extras">
+                    <div class="about-badges">
+                        <span class="badge-item">⚡ Clean Code</span>
+                        <span class="badge-item">🎯 Best Practices</span>
+                        <span class="badge-item">🚀 Modern Tech</span>
+                        <span class="badge-item">💡 User-First</span>
+                    </div>
+
+                    <a href="Assets/my new cv.pdf" class="btn-download" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download CV
+                    </a>
+                </div>
+
+                <!-- /////////////////////////////////// -->
+
                 <div class="terminal-window">
                     <div class="terminal-header">
                         <span class="circle red"></span>
@@ -108,25 +203,23 @@
                         <span class="circle green"></span>
                     </div>
 
-
                     <div class="terminal-body">
                         <pre><code><span class="keyword">const</span> developer = {
-                        nick name: <span class="string">"Anu"</span>,
-                        role: <span class="string">"Full-Stack Developer | UI/UX Enthusiast"</span>,
-                        passion: <span class="string">"Crafting clean code and meaningful user experiences"</span>,
-                        skills: [
-                            <span class="string">"HTML"</span>,
-                            <span class="string">"CSS"</span>,
-                            <span class="string">"JavaScript"</span>,
-                            <span class="string">"Java"</span>,
-                            <span class="string">"UI/UX Design"</span>,
-                            <span class="string">"Git & GitHub"</span>
-                        ],
-                        mindset: <span class="string">"Always learning, always building"</span>
-                    };
+    nickname: <span class="string">"Anu"</span>,
+    role: <span class="string">"Full-Stack Developer | UI/UX Enthusiast"</span>,
+    passion: <span class="string">"Crafting clean code and meaningful user experiences"</span>,
+    skills: [
+        <span class="string">"HTML"</span>,
+        <span class="string">"CSS"</span>,
+        <span class="string">"JavaScript"</span>,
+        <span class="string">"Java"</span>,
+        <span class="string">"UI/UX Design"</span>,
+        <span class="string">"Git & GitHub"</span>
+    ],
+    mindset: <span class="string">"Always learning, always building 🚀"</span>
+};
 
-
-                <span class="keyword">console</span>.log(<span class="string">"Hello, world"</span>, developer);</code></pre>
+<span class="keyword">console</span>.log(<span class="string">"Hello, world 👋"</span>, developer);</code></pre>
                     </div>
                 </div>
 
@@ -134,10 +227,15 @@
         </div>
     </section>
 
+
+    <div class="divider"></div>
+    <!-- resume -->
+
     <section class="resume" id="resume">
         <div class="section-title-center">
-            <span class="badge center-badge">My Journey</span>
-            <h2>Resume</h2>
+            <span class="badge center-badge">MY JOURNEY</span>
+            <h2>Res<span class="green-text">ume</span></h2>
+            <div class="underline"></div>
         </div>
 
         <div class="timeline-container">
@@ -242,10 +340,14 @@
         </div>
     </section>
 
+    <div class="divider"></div>
+    <!-- skills -->
+
     <section class="skills" id="skills">
         <div class="section-title-center">
             <span class="badge center-badge">WHAT I KNOW</span>
-            <h2>Skills & Expertise</h2>
+            <h2>Skills & <span class="green-text">Expertise</span></h2>
+            <div class="underline"></div>
         </div>
 
         <div class="skills-grid">
@@ -304,7 +406,8 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" alt="MySQL">
                     <h3>MySQL</h3>
                 </div>
-                <span class="skill-level">Expert</span>
+                <span class="skill-level"
+                    style="border-color: var(--primary-green); color: var(--primary-green); background-color: rgba(44, 214, 59, 0.2);">Expert</span>
                 <p>Database design, queries, and data management</p>
                 <div class="skill-footer">1+ years • 3+ projects</div>
             </div>
@@ -331,12 +434,14 @@
         </div>
     </section>
 
+    <div class="divider"></div>
+    <!-- services -->
+
     <section class="services" id="services">
         <div class="section-title-center">
-            <div class="title-with-badge">
-                <span class="badge center-badge" style="margin-bottom: 0;">WHAT I DO</span>
-                <h2>Services</h2>
-            </div>
+            <span class="badge center-badge">WHAT I DO</span>
+            <h2>Servi<span class="green-text">ces</span></h2>
+            <div class="underline"></div>
             <p class="section-subtitle">
                 A passionate Full-Stack Developer with experience across all stages of the software development
                 lifecycle.<br>
@@ -345,7 +450,7 @@
             </p>
         </div>
 
-        <div class="services-grid">
+        <!-- <div class="services-grid">
             <div class="service-card">
                 <img src="Assets/standalone.png" alt="Desktop Icon" class="service-icon">
                 <h3>Standalone Application</h3>
@@ -367,171 +472,282 @@
                 <h3>IOT Based Application</h3>
                 <p>Crafting enterprise applications that combine reliability, consistency, and innovation.</p>
                 <a href="#" class="read-more">Read More.</a>
+            </div> -->
+
+
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="Assets/standalone.png" alt="Desktop Icon" class="service-icon">
+                <h3>Standalone Application</h3>
+                <p>Creating modern enterprise applications that are reliable, consistent, and driven by innovative
+                    ideas.</p>
+                <a href="#" class="read-more" data-modal="modal-standalone">Read More.</a>
+            </div>
+
+            <div class="service-card">
+                <img src="Assets/ui_ux.png" alt="UI/UX Icon" class="service-icon">
+                <h3>UI/UX Designing</h3>
+                <p>Building modern enterprise applications that are reliable, consistent, and powered by creative ideas.
+                </p>
+                <a href="#" class="read-more" data-modal="modal-uiux">Read More.</a>
+            </div>
+
+            <div class="service-card">
+                <img src="Assets/iot.png" alt="IOT Icon" class="service-icon">
+                <h3>IOT Based Application</h3>
+                <p>Crafting enterprise applications that combine reliability, consistency, and innovation.</p>
+                <a href="#" class="read-more" data-modal="modal-iot">Read More.</a>
             </div>
         </div>
-    </section>
 
-    <section class="portfolio-section" id="projects">
-        <div class="section-title-center">
-            <h3>My Works</h3>
-            <div class="works-tabs">
-                <span class="tab active">Projects</span>
-                <span class="tab">Assignment</span>
-            </div>
-            <p class="section-subtitle" style="margin-top: 10px;">
-                Worked on a variety of projects—here are some highlights:
-            </p>
-        </div>
+        <!-- projects and assignments -->
 
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="Assets/pharmacy_projectlogo.png" alt="KK Pharmacy Management System">
+        <div class="divider"></div>
+
+        <section class="portfolio-section" id="projects">
+            <div class="section-title-center">
+                <span class="badge center-badge">PORTFOLIO</span>
+                <h2>My <span class="green-text">Works</span></h2>
+                <div class="underline"></div>
+
+                <p class="section-subtitle" style="margin-top: 20px; margin-bottom: 35px;">
+                    A collection of my recent standalone applications, games, and academic assignments.
+                </p>
+
+                <div class="works-tabs">
+                    <span class="tab active" onclick="switchTab('projects')">Projects</span>
+                    <span class="tab" onclick="switchTab('assignments')">Assignment</span>
                 </div>
-                <div class="project-label">Project 01</div>
-            </div>
 
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="Assets/conect4_project.png" alt="Connect 4">
+                <div class="projects-grid" id="grid-projects">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Assets/pharmacy_projectlogo.png" alt="KK Pharmacy Management System">
+
+                            <div class="project-overlay">
+                                <h4>KK Pharmacy System</h4>
+                                <p>A comprehensive inventory and stock management system built for pharmacies.</p>
+                                <div class="tech-stack">
+                                    <span>Java</span>
+                                    <span>MySQL</span>
+                                </div>
+                                <a href="https://github.com/ANu-771" target="_blank" class="github-link">
+                                    <img src="Assets/icons8-github-100.png" alt="GitHub"> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-label">Project 01</div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Assets/conect4_project.png" alt="Connect 4">
+
+                            <div class="project-overlay">
+                                <h4>Connect 4 Game</h4>
+                                <p>A classic multiplayer strategy game implemented with a graphical user interface.</p>
+                                <div class="tech-stack">
+                                    <span>Java</span>
+                                    <span>JavaFX</span>
+                                </div>
+                                <a href="https://github.com/ANu-771" target="_blank" class="github-link">
+                                    <img src="Assets/icons8-github-100.png" alt="GitHub"> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-label">Project 02</div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Assets/cmdline_projects.avif" alt="Project 03">
+
+                            <div class="project-overlay">
+                                <h4>Command Line Tools</h4>
+                                <p>A collection of efficient, terminal-based applications and utilities.</p>
+                                <div class="tech-stack">
+                                    <span>Java</span>
+                                    <span>Bash</span>
+                                </div>
+                                <a href="https://github.com/ANu-771" target="_blank" class="github-link">
+                                    <img src="Assets/icons8-github-100.png" alt="GitHub"> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-label">Project 03</div>
+                    </div>
                 </div>
-                <div class="project-label">Project 02</div>
-            </div>
+        </section>
 
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="Assets/cmdline_projects.avif" alt="Project 03">
+        <div class="divider"></div>
+
+        <section class="portfolio-section" id="assignments">
+            <div class="section-title-center">
+                <div class="works-tabs">
+                    <span class="tab">Projects</span>
+                    <span class="tab active">Assignment</span>
                 </div>
-                <div class="project-label">Project 03</div>
+                <p class="section-subtitle" style="margin-top: 10px;">
+                    Strong foundation in both academic knowledge and practical experience.
+                </p>
             </div>
-        </div>
-    </section>
 
-    <section class="portfolio-section" id="assignments">
-        <div class="section-title-center">
-            <div class="works-tabs">
-                <span class="tab">Projects</span>
-                <span class="tab active">Assignment</span>
-            </div>
-            <p class="section-subtitle" style="margin-top: 10px;">
-                Strong foundation in both academic knowledge and practical experience.
-            </p>
-        </div>
-
-        <div class="assignments-grid">
-            <div class="assignment-card">
-                <div class="pdf-icon-wrapper">
-                    <img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon">
+            <div class="assignments-grid">
+                <div class="assignment-card">
+                    <div class="pdf-icon-wrapper">
+                        <img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon">
+                    </div>
+                    <div class="assignment-label">Assignment</div>
                 </div>
-                <div class="assignment-label">Assignment</div>
+                <div class="assignment-card">
+                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
+                    <div class="assignment-label">Assignment</div>
+                </div>
+                <div class="assignment-card">
+                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
+                    <div class="assignment-label">Assignment</div>
+                </div>
+                <div class="assignment-card">
+                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
+                    <div class="assignment-label">Assignment</div>
+                </div>
+                <div class="assignment-card">
+                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
+                    <div class="assignment-label">Assignment</div>
+                </div>
+                <div class="assignment-card">
+                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
+                    <div class="assignment-label">Assignment</div>
+                </div>
+                <div class="assignment-card">
+                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
+                    <div class="assignment-label">Assignment</div>
+                </div>
+                <div class="assignment-card">
+                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
+                    <div class="assignment-label">Assignment</div>
+                </div>
+                <div class="assignment-card">
+                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
+                    <div class="assignment-label">Assignment</div>
+                </div>
+                <div class="assignment-card">
+                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
+                    <div class="assignment-label">Assignment</div>
+                </div>
+                <div class="assignment-card">
+                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
+                    <div class="assignment-label">Assignment</div>
+                </div>
+                <div class="assignment-card">
+                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
+                    <div class="assignment-label">Assignment</div>
+                </div>
             </div>
-            <div class="assignment-card">
-                <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                <div class="assignment-label">Assignment</div>
-            </div>
-            <div class="assignment-card">
-                <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                <div class="assignment-label">Assignment</div>
-            </div>
-            <div class="assignment-card">
-                <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                <div class="assignment-label">Assignment</div>
-            </div>
-            <div class="assignment-card">
-                <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                <div class="assignment-label">Assignment</div>
-            </div>
-            <div class="assignment-card">
-                <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                <div class="assignment-label">Assignment</div>
-            </div>
-            <div class="assignment-card">
-                <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                <div class="assignment-label">Assignment</div>
-            </div>
-            <div class="assignment-card">
-                <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                <div class="assignment-label">Assignment</div>
-            </div>
-            <div class="assignment-card">
-                <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                <div class="assignment-label">Assignment</div>
-            </div>
-            <div class="assignment-card">
-                <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                <div class="assignment-label">Assignment</div>
-            </div>
-            <div class="assignment-card">
-                <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                <div class="assignment-label">Assignment</div>
-            </div>
-            <div class="assignment-card">
-                <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                <div class="assignment-label">Assignment</div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="gallery" id="gallery">
-        <div class="section-title-center">
-            <h2>Gall<span class="green-text">ery</span></h2>
-            <p class="section-subtitle" style="margin-top: 15px; max-width: 900px; font-size: 0.95rem;">
-                learning, growing, and making unforgettable memories with amazing friends. From lectures to late laughs,
-                every moment is part of the journey
-            </p>
-        </div>
+        <!-- gallery -->
 
-        <div class="gallery-container">
+        <div class="divider"></div>
+
+        <section class="gallery" id="gallery">
+            <div class="section-title-center">
+                <span class="badge center-badge">MY MEMORIES</span>
+                <h2>Gall<span class="green-text">ery</span></h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">
+                    Learning, growing, and making unforgettable memories with amazing friends. From lectures to late
+                    laughs,
+                    every moment is part of the journey.
+                </p>
+            </div>
+
+            <!-- <div class="gallery-container">
             <div class="gallery-slider-track">
                 <img src="Assets/galleryphoto1.jpg" alt="Gallery Image 1" class="gallery-slide">
                 <img src="Assets/galleryphoto2.jpg" alt="Gallery Image 2" class="gallery-slide">
                 <img src="Assets/galleryphoto3.jpeg" alt="Gallery Image 3" class="gallery-slide">
                 <img src="Assets/galleryphoto4.jpeg" alt="Gallery Image 4" class="gallery-slide">
             </div>
-        </div>
-    </section>
+        </div> -->
 
-    <section class="contact" id="contact">
-        <div class="section-title-center">
-            <div class="title-with-badge">
-                <span class="badge center-badge" style="margin-bottom: 0;">GET IN TOUCH</span>
-                <h2>CONTACT <span class="green-text">ME</span></h2>
-            </div>
-            <p class="section-subtitle" style="margin-top: 20px;">
-                Let's connect and talk about your next project — or just drop by to say hi!
-            </p>
-        </div>
 
-        <div class="contact-container">
-            <div class="contact-image-col">
-                <div class="hex-wrapper">
-                    <img src="Assets/contactimg.png" alt="Isuru Portrait Hexagon">
+
+            <div class="gallery-container">
+                <div class="gallery-slider-track">
+
+                    <div class="gallery-slide">
+                        <img src="Assets/galleryphoto1.jpg" alt="Gallery Image 1">
+                        <div class="gallery-caption">IJSE team — ready to build the future 🚀</div>
+                    </div>
+
+                    <div class="gallery-slide">
+                        <img src="Assets/galleryphoto2.jpg" alt="Gallery Image 2">
+                        <div class="gallery-caption">කෝවුල් වසන්තය 2025 — IJSE batch celebration</div>
+                    </div>
+
+                    <div class="gallery-slide">
+                        <img src="Assets/galleryphoto3.jpeg" alt="Gallery Image 3">
+                        <div class="gallery-caption">Squad goals — unforgettable moments with friends</div>
+                    </div>
+
+                    <div class="gallery-slide">
+                        <img src="Assets/galleryphoto4.jpeg" alt="Gallery Image 4">
+                        <div class="gallery-caption">The crew after class — IJSE days</div>
+                    </div>
+
                 </div>
             </div>
+        </section>
 
-            <div class="contact-form-col">
-                <form class="contact-form">
-                    <input type="text" placeholder="Your name:" class="form-input">
-                    <input type="email" placeholder="Your Email:" class="form-input">
-                    <input type="text" placeholder="Subject:" class="form-input">
-                    <textarea placeholder="Message:" class="form-textarea"></textarea>
+        <div class="divider"></div>
 
-                    <button type="submit" class="btn-submit">SEND MESSAGE</button>
-                </form>
+
+        <!-- contat me -->
+        <section class="contact" id="contact">
+            <div class="section-title-center">
+                <span class="badge center-badge">GET IN TOUCH</span>
+                <h2>CONTACT <span class="green-text">ME</span></h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">
+                    Let's connect and talk about your next project — or just drop by to say hi!
+                </p>
             </div>
-        </div>
-    </section>
 
-    <section class="reach-me" id="reach-me">
-        <div class="section-title-center">
-            <h2>Reach <span class="green-text">Me</span></h2>
-            <p class="section-subtitle" style="margin-top: 15px;">
-                Reach out through the platforms below to ask questions about my work or share your ideas.
-            </p>
-        </div>
+            <div class="contact-container">
+                <div class="contact-image-col">
+                    <div class="hex-wrapper">
+                        <img src="Assets/contactimg.png" alt="Isuru Portrait Hexagon">
+                    </div>
+                </div>
 
-        <div class="reach-container">
-            <div class="reach-left">
+                <div class="contact-form-col">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your name:" class="form-input">
+                        <input type="email" placeholder="Your Email:" class="form-input">
+                        <input type="text" placeholder="Subject:" class="form-input">
+                        <textarea placeholder="Message:" class="form-textarea"></textarea>
+
+                        <button type="button" class="btn-submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer -->
+        <div class="divider"></div>
+
+        <section class="reach-me" id="reach-me">
+            <div class="section-title-center">
+                <h2>Reach <span class="green-text">Me</span></h2>
+                <p class="section-subtitle" style="margin-top: 15px;">
+                    Reach out through the platforms below to ask questions about my work or share your ideas.
+                </p>
+            </div>
+
+            <div class="reach-container">
+                <!-- <div class="reach-left">
                 <div class="reach-item">
                     <img src="Assets/dis 100.png" alt="Discord" class="reach-icon">
                     <span>anux_77</span>
@@ -551,10 +767,38 @@
                 <div class="reach-item">
                     <img src="Assets/gmail-logo-100.png" alt="Email" class="reach-icon">
                     <span>isuruanupama2021@gmail.com</span>
-                </div>
-            </div>
+                </div> -->
 
-            <div class="reach-right">
+
+
+
+
+
+                <div class="reach-left">
+                    <a href="https://discordapp.com/users/anux_77" target="_blank" class="reach-item">
+                        <img src="Assets/dis 100.png" alt="Discord" class="reach-icon">
+                        <span>anux_77</span>
+                    </a>
+                    <a href="https://wa.me/94779647493" target="_blank" class="reach-item">
+                        <img src="Assets/wp 100.png" alt="WhatsApp" class="reach-icon">
+                        <span>+9477 964 7493</span>
+                    </a>
+                    <a href="https://t.me/AnU_V7T" target="_blank" class="reach-item">
+                        <img src="Assets/tele 100.png" alt="Telegram" class="reach-icon">
+                        <span>@AnU_V7T</span>
+                    </a>
+                    <a href="https://github.com/ANu-771" target="_blank" class="reach-item">
+                        <img src="Assets/icons8-github-100.png" alt="GitHub" class="reach-icon">
+                        <span>ANu-771</span>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=isuruanupama2021@gmail.com" target="_blank"
+                        class="reach-item">
+                        <img src="Assets/gmail-logo-100.png" alt="Email" class="reach-icon">
+                        <span>isuruanupama2021@gmail.com</span>
+                    </a>
+                </div>
+
+                <!-- <div class="reach-right">
                 <div class="map-wrapper">
                     <div class="map-pin-col">
                         <img src="Assets/location-100.png" alt="Location Pin" class="map-pin">
@@ -563,34 +807,70 @@
                         <img src="Assets/googleMapsTricksHero.avif" alt="Map Location" class="map-screenshot">
                     </div>
                 </div>
+            </div> -->
+
+
+
+
+
+                <div class="reach-right">
+                    <div class="map-wrapper">
+
+                        <div class="floating-pin">
+                            <img src="Assets/location-100.png" alt="Location Pin" class="map-pin">
+                        </div>
+
+                        <iframe
+                            src="https://maps.google.com/maps?q=Galle+District,+Sri+Lanka&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <ul class="footer-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact" class="green-text">Contact</a></li>
-            </ul>
+        <footer class="footer">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact" class="green-text">Contact</a></li>
+                </ul>
 
-            <div class="footer-divider"></div>
+                <div class="footer-divider"></div>
 
-            <p class="copyright">
-                &copy; 2026 Isuru Anupama. All rights reserved.<br>
-                <span class="green-text">Designed & Developed</span> by Isuru Anupama.
-            </p>
-        </div>
+                <p class="copyright">
+                    &copy; 2026 Isuru Anupama. All rights reserved.<br>
+                    <span class="green-text">Designed & Developed</span> by Isuru Anupama.
+                </p>
+            </div>
 
-        <a href="#home" class="back-to-top">
-            <img src="Assets/chevron-100.png" alt="Back to Top" class="top-icon">
-        </a>
-    </footer>
+            <a href="#home" class="back-to-top">
+                <img src="Assets/chevron-100.png" alt="Back to Top" class="top-icon">
+            </a>
+
+
+
+
+            <a href="Assets/deep_sleep_experience_uninterrupted_rest_ardh_2fw8ny_9387.m4a" target="_blank"
+                class="music-player-btn">
+                <span class="music-text">Sound of Darkness</span>
+                <div class="equalizer">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                    <span class="bar bar-3"></span>
+                    <span class="bar bar-4"></span>
+                </div>
+            </a>
+        </footer>
+
+
+        <script src="script.js"></script>
 
 </body>
 
