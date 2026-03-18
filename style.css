@@ -1839,7 +1839,7 @@ a {
 @media (max-width: 1024px) {
 
     .hero {
-        gap: 20px;
+        gap: 30px;
     }
 
     .glow-circle {
@@ -1988,7 +1988,7 @@ a {
 @media (max-width: 768px) {
 
     .hero {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
         gap: 40px;
         margin-top: 20px;
@@ -2122,6 +2122,21 @@ a {
         gap: 15px;
         align-items: flex-start;
     }
+
+    /* .timeline-header {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .timeline-logo {
+        width: 50px;
+        height: 50px;
+        min-width: 50px; 
+    } */
+
+
 
     .hex-wrapper {
         width: 280px;
