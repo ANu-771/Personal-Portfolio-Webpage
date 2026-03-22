@@ -31,29 +31,6 @@ if (voiceBtn && voiceAudio) {
     });
 }
 
-// --- Tab Switching tabs for Projects/Assignments ---
-// function switchTab(tabName) {
-//     const tabProjects = document.getElementById('tab-projects');
-//     const tabAssignments = document.getElementById('tab-assignments');
-//     const gridProjects = document.getElementById('grid-projects');
-//     const gridAssignments = document.getElementById('grid-assignments');
-
-//     if (tabName === 'projects') {
-//         gridProjects.style.display = 'flex';
-//         gridAssignments.style.display = 'none';
-
-//         tabProjects.classList.add('active');
-//         tabAssignments.classList.remove('active');
-
-//     } else if (tabName === 'assignments') {
-//         gridProjects.style.display = 'none';
-//         gridAssignments.style.display = 'grid';
-
-//         tabAssignments.classList.add('active');
-//         tabProjects.classList.remove('active');
-//     }
-// }
-
 
 // --- Resume Scroll Animation ---
 
