@@ -82,7 +82,8 @@
                 <a href="#projects" class="btn-primary">VIEW MY WORK &rarr;</a>
                 <a href="#contact" class="btn-secondary">Let's Talk</a>
 
-                <!-- <a href="#" id="voiceBtn" class="btn-listen">
+
+                <a href="#" id="voiceBtn" class="btn-listen">
                     <span>Listen</span>
                     <div class="equalizer">
                         <span class="bar bar-1"></span>
@@ -94,31 +95,7 @@
 
                 <audio id="voiceAudio">
                     <source src="Assets/full_voice_of_myportfolio.mp3" type="audio/mpeg">
-                </audio> -->
-
-
-
-
-
-
-
-
-
-
-                <a href="Assets/full_voice_of_myportfolio.mp3" target="_blank" class="btn-listen">
-                    <span>Listen</span>
-                    <div class="equalizer">
-                        <span class="bar bar-1"></span>
-                        <span class="bar bar-2"></span>
-                        <span class="bar bar-3"></span>
-                        <span class="bar bar-4"></span>
-                    </div>
-                </a>
-
-                <a href="Assets/deep_sleep_experience_uninterrupted_rest_ardh_2fw8ny_9387.m4a" target="_blank"
-                    class="music-player-btn" style="display: flex;">
-                    <span class="music-text">Sound of Darkness</span>
-                </a>
+                </audio>
             </div>
         </div>
 
@@ -450,30 +427,6 @@
             </p>
         </div>
 
-        <!-- <div class="services-grid">
-            <div class="service-card">
-                <img src="Assets/standalone.png" alt="Desktop Icon" class="service-icon">
-                <h3>Standalone Application</h3>
-                <p>Creating modern enterprise applications that are reliable, consistent, and driven by innovative
-                    ideas.</p>
-                <a href="#" class="read-more">Read More.</a>
-            </div>
-
-            <div class="service-card">
-                <img src="Assets/ui_ux.png" alt="UI/UX Icon" class="service-icon">
-                <h3>UI/UX Designing</h3>
-                <p>Building modern enterprise applications that are reliable, consistent, and powered by creative ideas.
-                </p>
-                <a href="#" class="read-more">Read More.</a>
-            </div>
-
-            <div class="service-card">
-                <img src="Assets/iot.png" alt="IOT Icon" class="service-icon">
-                <h3>IOT Based Application</h3>
-                <p>Crafting enterprise applications that combine reliability, consistency, and innovation.</p>
-                <a href="#" class="read-more">Read More.</a>
-            </div> -->
-
 
         <div class="services-grid">
             <div class="service-card">
@@ -515,8 +468,8 @@
                 </p>
 
                 <div class="works-tabs">
-                    <span class="tab active" onclick="switchTab('projects')">Projects</span>
-                    <span class="tab" onclick="switchTab('assignments')">Assignment</span>
+                    <span class="tab active" id="tab-projects" onclick="switchTab('projects')">Projects</span>
+                    <span class="tab" id="tab-assignments" onclick="switchTab('assignments')">Assignment</span>
                 </div>
 
                 <div class="projects-grid" id="grid-projects">
@@ -577,7 +530,7 @@
                         <div class="project-label">Project 03</div>
                     </div>
                 </div>
-        </section>
+                <!-- </section>
 
         <div class="divider"></div>
 
@@ -590,60 +543,72 @@
                 <p class="section-subtitle" style="margin-top: 10px;">
                     Strong foundation in both academic knowledge and practical experience.
                 </p>
-            </div>
+            </div> -->
 
-            <div class="assignments-grid">
-                <div class="assignment-card">
-                    <div class="pdf-icon-wrapper">
-                        <img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon">
+                <!-- <div class="assignments-grid"> -->
+                <div class="assignments-grid" id="grid-assignments" style="display: none;">
+                    <div class="assignment-card">
+                        <div class="pdf-icon-wrapper">
+                            <img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon">
+                        </div>
+                        <div class="assignment-label">Assignment</div>
                     </div>
-                    <div class="assignment-label">Assignment</div>
+                    <div class="assignment-card">
+                        <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon">
+                        </div>
+                        <div class="assignment-label">Assignment</div>
+                    </div>
+                    <div class="assignment-card">
+                        <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon">
+                        </div>
+                        <div class="assignment-label">Assignment</div>
+                    </div>
+                    <div class="assignment-card">
+                        <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon">
+                        </div>
+                        <div class="assignment-label">Assignment</div>
+                    </div>
+                    <div class="assignment-card">
+                        <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon">
+                        </div>
+                        <div class="assignment-label">Assignment</div>
+                    </div>
+                    <div class="assignment-card">
+                        <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon">
+                        </div>
+                        <div class="assignment-label">Assignment</div>
+                    </div>
+                    <div class="assignment-card">
+                        <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon">
+                        </div>
+                        <div class="assignment-label">Assignment</div>
+                    </div>
+                    <div class="assignment-card">
+                        <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon">
+                        </div>
+                        <div class="assignment-label">Assignment</div>
+                    </div>
+                    <div class="assignment-card">
+                        <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon">
+                        </div>
+                        <div class="assignment-label">Assignment</div>
+                    </div>
+                    <div class="assignment-card">
+                        <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon">
+                        </div>
+                        <div class="assignment-label">Assignment</div>
+                    </div>
+                    <div class="assignment-card">
+                        <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon">
+                        </div>
+                        <div class="assignment-label">Assignment</div>
+                    </div>
+                    <div class="assignment-card">
+                        <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon">
+                        </div>
+                        <div class="assignment-label">Assignment</div>
+                    </div>
                 </div>
-                <div class="assignment-card">
-                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                    <div class="assignment-label">Assignment</div>
-                </div>
-                <div class="assignment-card">
-                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                    <div class="assignment-label">Assignment</div>
-                </div>
-                <div class="assignment-card">
-                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                    <div class="assignment-label">Assignment</div>
-                </div>
-                <div class="assignment-card">
-                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                    <div class="assignment-label">Assignment</div>
-                </div>
-                <div class="assignment-card">
-                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                    <div class="assignment-label">Assignment</div>
-                </div>
-                <div class="assignment-card">
-                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                    <div class="assignment-label">Assignment</div>
-                </div>
-                <div class="assignment-card">
-                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                    <div class="assignment-label">Assignment</div>
-                </div>
-                <div class="assignment-card">
-                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                    <div class="assignment-label">Assignment</div>
-                </div>
-                <div class="assignment-card">
-                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                    <div class="assignment-label">Assignment</div>
-                </div>
-                <div class="assignment-card">
-                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                    <div class="assignment-label">Assignment</div>
-                </div>
-                <div class="assignment-card">
-                    <div class="pdf-icon-wrapper"><img src="Assets/pdf-512.png" alt="PDF Icon" class="pdf-icon"></div>
-                    <div class="assignment-label">Assignment</div>
-                </div>
-            </div>
         </section>
 
         <!-- gallery -->
@@ -854,19 +819,6 @@
                 <img src="Assets/chevron-100.png" alt="Back to Top" class="top-icon">
             </a>
 
-
-
-
-            <a href="Assets/deep_sleep_experience_uninterrupted_rest_ardh_2fw8ny_9387.m4a" target="_blank"
-                class="music-player-btn">
-                <span class="music-text">Sound of Darkness</span>
-                <div class="equalizer">
-                    <span class="bar bar-1"></span>
-                    <span class="bar bar-2"></span>
-                    <span class="bar bar-3"></span>
-                    <span class="bar bar-4"></span>
-                </div>
-            </a>
         </footer>
 
 

@@ -337,6 +337,56 @@ a {
 }
 
 
+/* --- Equalizer --- */
+.equalizer {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.bar {
+    width: 3px;
+    background-color: var(--primary-green);
+    border-radius: 2px;
+    animation: bounceBar 0.6s infinite alternate ease-in-out;
+}
+
+.bar-1 {
+    height: 15px;
+    animation-delay: 0.1s;
+}
+
+.bar-2 {
+    height: 10px;
+    animation-delay: 0.4s;
+}
+
+.bar-3 {
+    height: 12px;
+    animation-delay: 0.2s;
+}
+
+.bar-4 {
+    height: 14px;
+    animation-delay: 0.5s;
+}
+
+@keyframes bounceBar {
+    0% {
+        transform: scaleY(0.3);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+
+
 /* --- Hero Image --- */
 .glow-circle {
     width: 450px;
@@ -654,8 +704,23 @@ a {
 .timeline-item {
     position: relative;
     margin-bottom: 40px;
+
+    animation: scrollFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
 }
 
+@keyframes scrollFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(80px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
 
 /* 
 .timeline-item {
@@ -973,15 +1038,9 @@ a {
     color: var(--text-muted);
     text-align: right;
     width: 100%;
-    transition: all 0.3s ease;
-}
-
-.service-card:hover .read-more {
-    color: var(--primary-green);
-    transform: translateX(-5px);
-    /* Shifts left slightly */
-    letter-spacing: 1px;
-    text-shadow: 0 0 10px rgba(44, 214, 59, 0.5);
+    pointer-events: none; 
+    cursor: default; 
+    text-decoration: none;
 }
 
 /* =========================================
@@ -1183,9 +1242,15 @@ a {
 /* --- Assignments Grid --- */
 .assignments-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* This magic line makes it 100% responsive automatically! */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
     margin-top: 50px;
+    
+    /* This stops it from stretching too wide on large screens */
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .assignment-card {
@@ -1195,7 +1260,7 @@ a {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 280px;
+    height: 230px;
     box-shadow: 0 0 20px rgba(44, 214, 59, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1576,8 +1641,8 @@ a {
 /* --- Back to Top Button --- */
 .back-to-top {
     position: absolute;
-    right: 20px;
-    bottom: 80px;
+    right: 0px; 
+    bottom: 20px;
     width: 50px;
     height: 50px;
     border: 2px solid var(--primary-green);
@@ -1600,105 +1665,6 @@ a {
 }
 
 
-
-
-
-
-/* =========================================
-   Floating Music Player (Bottom Right)
-   ========================================= */
-.music-player-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    background-color: rgba(15, 15, 15, 0.75);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-
-    padding: 8px 16px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
-    text-decoration: none;
-}
-
-.music-player-btn:hover {
-    border-color: var(--primary-green);
-    box-shadow: 0 10px 25px rgba(44, 214, 59, 0.3);
-    transform: translateY(-3px);
-}
-
-.music-text {
-    color: var(--text-light);
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: color 0.3s ease;
-}
-
-.music-player-btn:hover .music-text {
-    color: var(--primary-green);
-    text-shadow: 0 0 10px rgba(44, 214, 59, 0.6);
-}
-
-/* --- The Equalizer Bars --- */
-.equalizer {
-    display: flex;
-    align-items: flex-end;
-    gap: 3px;
-    height: 12px;
-}
-
-.bar {
-    width: 2px;
-    background-color: var(--primary-green);
-    border-radius: 2px;
-    transform-origin: bottom;
-    transform: scaleY(0.2);
-    transition: transform 0.3s ease;
-}
-
-.bar-1 {
-    height: 8px;
-    animation-delay: 0.0s;
-}
-
-.bar-2 {
-    height: 12px;
-    animation-delay: 0.3s;
-}
-
-.bar-3 {
-    height: 6px;
-    animation-delay: 0.1s;
-}
-
-.bar-4 {
-    height: 10px;
-    animation-delay: 0.4s;
-}
-
-.music-player-btn.playing .bar {
-    animation: rhythmPulse 0.6s infinite alternate ease-in-out;
-}
-
-@keyframes rhythmPulse {
-    0% {
-        transform: scaleY(0.2);
-        opacity: 0.5;
-    }
-
-    100% {
-        transform: scaleY(1);
-        opacity: 1;
-    }
-}
 
 
 
@@ -2163,11 +2129,11 @@ a {
     }
 
     .works-tabs .tab {
-        font-size: 1.8rem;
+        font-size: 1.1rem;
     }
 
     .works-tabs {
-        gap: 20px;
+        gap: 15px;
     }
 
     .main-image-wrapper {
@@ -2199,7 +2165,7 @@ a {
     }
 
     .works-tabs .tab {
-        font-size: 1.5rem;
+        font-size: 0.9rem;
     }
 
 
