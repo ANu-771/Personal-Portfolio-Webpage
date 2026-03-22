@@ -346,7 +346,7 @@ a {
     margin-left: 5px;
 }
 
-.bar {
+.equalizer bar {
     width: 3px;
     background-color: var(--primary-green);
     border-radius: 2px;
@@ -1788,7 +1788,10 @@ a {
     border-radius: 3px;
     transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
-
+.menu-toggle:hover .bar {
+    background-color: var(--primary-green);
+    box-shadow: 0 0 8px rgba(44, 214, 59, 0.6);
+}
 /* -------------------------------------------------------------------------
    1. Laptop Large Type Devices (max-width: 1440px)
    ------------------------------------------------------------------------- */

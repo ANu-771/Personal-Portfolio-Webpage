@@ -35,7 +35,6 @@ if (voiceBtn && voiceAudio) {
 // --- Resume Scroll Animation ---
 
 const timelineItems = document.querySelectorAll('.timeline-item');
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
