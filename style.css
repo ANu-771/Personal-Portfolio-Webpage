@@ -701,15 +701,15 @@ a {
 }
 
 
-.timeline-item {
+/* .timeline-item {
     position: relative;
     margin-bottom: 40px;
 
     animation: scrollFadeUp linear both;
     animation-timeline: view();
     animation-range: entry 10% cover 30%;
-}
-
+} */
+/* 
 @keyframes scrollFadeUp {
     from {
         opacity: 0;
@@ -720,22 +720,21 @@ a {
         opacity: 1;
         transform: translateY(0) scale(1);
     }
-}
+} */
 
-/* 
+
 .timeline-item {
     position: relative;
     margin-bottom: 40px;
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1),
-        transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .timeline-item.show-item {
     opacity: 1;
     transform: translateY(0);
-} */
+}
 
 
 
@@ -1038,8 +1037,8 @@ a {
     color: var(--text-muted);
     text-align: right;
     width: 100%;
-    pointer-events: none; 
-    cursor: default; 
+    pointer-events: none;
+    cursor: default;
     text-decoration: none;
 }
 
@@ -1242,12 +1241,9 @@ a {
 /* --- Assignments Grid --- */
 .assignments-grid {
     display: grid;
-    /* This magic line makes it 100% responsive automatically! */
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 30px;
     margin-top: 50px;
-    
-    /* This stops it from stretching too wide on large screens */
     max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
@@ -1260,7 +1256,7 @@ a {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 230px;
+    height: 300px;
     box-shadow: 0 0 20px rgba(44, 214, 59, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1641,7 +1637,7 @@ a {
 /* --- Back to Top Button --- */
 .back-to-top {
     position: absolute;
-    right: 0px; 
+    right: 0px;
     bottom: 20px;
     width: 50px;
     height: 50px;

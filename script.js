@@ -32,24 +32,45 @@ if (voiceBtn && voiceAudio) {
 }
 
 // --- Tab Switching tabs for Projects/Assignments ---
-function switchTab(tabName) {
-    const tabProjects = document.getElementById('tab-projects');
-    const tabAssignments = document.getElementById('tab-assignments');
-    const gridProjects = document.getElementById('grid-projects');
-    const gridAssignments = document.getElementById('grid-assignments');
+// function switchTab(tabName) {
+//     const tabProjects = document.getElementById('tab-projects');
+//     const tabAssignments = document.getElementById('tab-assignments');
+//     const gridProjects = document.getElementById('grid-projects');
+//     const gridAssignments = document.getElementById('grid-assignments');
 
-    if (tabName === 'projects') {
-        gridProjects.style.display = 'flex'; 
-        gridAssignments.style.display = 'none';
+//     if (tabName === 'projects') {
+//         gridProjects.style.display = 'flex';
+//         gridAssignments.style.display = 'none';
 
-        tabProjects.classList.add('active');
-        tabAssignments.classList.remove('active');
-        
-    } else if (tabName === 'assignments') {
-        gridProjects.style.display = 'none';
-        gridAssignments.style.display = 'grid'; 
+//         tabProjects.classList.add('active');
+//         tabAssignments.classList.remove('active');
 
-        tabAssignments.classList.add('active');
-        tabProjects.classList.remove('active');
-    }
-}
+//     } else if (tabName === 'assignments') {
+//         gridProjects.style.display = 'none';
+//         gridAssignments.style.display = 'grid';
+
+//         tabAssignments.classList.add('active');
+//         tabProjects.classList.remove('active');
+//     }
+// }
+
+
+// --- Resume Scroll Animation ---
+
+const timelineItems = document.querySelectorAll('.timeline-item');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show-item');
+
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+timelineItems.forEach(item => {
+    observer.observe(item);
+});
