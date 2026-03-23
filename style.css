@@ -832,7 +832,6 @@ a {
     animation: scalePulse 2.5s infinite alternate ease-in-out;
 }
 
-/* --- Pause scaling, pop up, and brighten glass on hover --- */
 .skill-card:hover {
     animation-play-state: paused;
     transform: scale(1.08) translateY(-10px) !important;
@@ -1256,7 +1255,8 @@ a {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: auto;
+    aspect-ratio: 4 / 5;
     box-shadow: 0 0 20px rgba(44, 214, 59, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1276,6 +1276,7 @@ a {
 
 .pdf-icon {
     width: 60px;
+    max-width: 40%;
     height: auto;
     filter: invert(60%) sepia(90%) saturate(400%) hue-rotate(80deg) brightness(100%) contrast(100%);
 }
