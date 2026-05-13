@@ -87,7 +87,7 @@ The website is designed with a modern UI/UX approach and optimized for multiple 
 - CSS Flexbox
 - CSS Grid
 - Media Queries
-- 
+
 ---
 
 ## 📱 Responsive Design
