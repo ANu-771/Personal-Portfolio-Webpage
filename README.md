@@ -9,7 +9,7 @@ Site Map URL: https://www.gloomaps.com/4qfEhzsAEi
 
 Wireframe URL: https://drive.google.com/file/d/1XxSJawMifo-hgZ8oOY0j6LP2nzRDJDsN/view
 
-Mockups URL: figma.com/design/k0YfK5UDi85LkQVMXicNVS/Myportfolio?node-id=1-2&t=n2MMuVQfnK14OaAU-1
+Mockups URL: https://www.figma.com/design/k0YfK5UDi85LkQVMXicNVS/Myportfolio?node-id=1-2&t=6PzlK5ImazPfNat1-0
 
 ---
 
