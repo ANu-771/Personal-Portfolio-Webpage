@@ -4,6 +4,13 @@ A modern and fully responsive **Personal Portfolio Website** developed using **H
 
 This project showcases personal information, technical skills, projects, academic work, and professional goals while demonstrating strong frontend development and UI/UX design principles without using external frameworks.
 
+
+Site Map URL: https://www.gloomaps.com/4qfEhzsAEi
+
+Wireframe URL: https://drive.google.com/file/d/1XxSJawMifo-hgZ8oOY0j6LP2nzRDJDsN/view
+
+Mockups URL: figma.com/design/k0YfK5UDi85LkQVMXicNVS/Myportfolio?node-id=1-2&t=n2MMuVQfnK14OaAU-1
+
 ---
 
 ## 📌 Project Overview
